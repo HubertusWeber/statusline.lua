@@ -44,16 +44,15 @@ local space = ' '
 ------------------------------------------------------------------------
 
 -- Different colors for mode
-local purple = '#BF616A' --#B48EAD
-local blue = '#83a598' --#81A1C1
-local yellow = '#fabd2f' --#EBCB8B
-local green = '#8ec07c' --#A3BE8C
-local red = '#fb4934' --#BF616A
+local purple = '#B48EAD' -- nord15
+local blue = '#81A1C1' -- nord9
+local yellow = '#EBCB8B' -- nord13
+local green = '#A3BE8C' -- nord14
+local red = '#BF616A' -- nord11
 
 -- fg and bg
-local white_fg = '#b8b894'
-local black_fg = '#282c34'
-local mybg = '#504945'
+local white_fg = '#ECEFF4' -- nord6
+local black_fg = '#2E3440' -- nord0
 
 --Statusline colour
 local statusline_bg = 'None' --> Set to none, use native bg
@@ -83,19 +82,18 @@ local set_mode_colours = function(mode)
 	end
 end
 
-
 function M.set_highlights()
-    -- local statusline_font = 'regular'
-  cmd('hi Status_Line guibg=' .. statusline_bg .. ' guifg=' .. statusline_fg)
+	-- local statusline_font = 'regular'
+	cmd('hi Status_Line guibg=' .. statusline_bg .. ' guifg=' .. statusline_fg)
 
-  --LSP Function Highlight Color
-  cmd('hi Statusline_LSP_Func guibg=' .. statusline_bg .. ' guifg=' .. green)
+	--LSP Function Highlight Color
+	cmd('hi Statusline_LSP_Func guibg=' .. statusline_bg .. ' guifg=' .. green)
 
-  -- INACTIVE BUFFER Colours
-  local InactiveLine_bg = '#1c1c1c'
+	-- INACTIVE BUFFER Colours
+	local InactiveLine_bg = '#1c1c1c'
 
-  local InactiveLine_fg = white_fg
-  cmd('hi InActive guibg=' .. InactiveLine_bg .. ' guifg=' .. InactiveLine_fg)
+	local InactiveLine_fg = white_fg
+	cmd('hi InActive guibg=' .. InactiveLine_bg .. ' guifg=' .. InactiveLine_fg)
 end
 
 ------------------------------------------------------------------------
@@ -151,7 +149,6 @@ function M.activeLine()
 
 	-- Component: LSP CURRENT FUCTION --> Requires LSP
 	statusline = statusline .. '%#Statusline_LSP_Func# ' .. lsp.current_function()
-
 
 	-- Scrollbar
 	-- statusline = statusline.."%#Status_Line#"..call('Scrollbar')..space

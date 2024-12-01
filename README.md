@@ -1,10 +1,4 @@
-[![GitHub stars](https://img.shields.io/github/stars/beauwilliams/statusline.lua.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/beauwilliams/statusline.lua/stargazers/)
-[![Requires](https://img.shields.io/badge/requires-nvim%200.5%2B-9cf?logo=neovim)](https://neovim.io//)
-[![GitHub contributors](https://img.shields.io/github/contributors/beauwilliams/statusline.lua.svg)](https://GitHub.com/beauwilliams/statusline.lua/graphs/contributors/)
-[![GitHub issues](https://img.shields.io/github/issues/beauwilliams/statusline.lua.svg)](https://GitHub.com/beauwilliams/statusline.lua/issues/)
-[![GitHub issues-closed](https://img.shields.io/github/issues-closed/beauwilliams/statusline.lua.svg)](https://GitHub.com/beauwilliams/statusline.lua/issues?q=is%3Aissue+is%3Aclosed)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-
+> **Note**: This fork changed the colors to use the [nord color palette](https://www.nordtheme.com/).
 
 # Statusline.lua
 ![screenshot](https://i.imgur.com/QocSv7V.png)
